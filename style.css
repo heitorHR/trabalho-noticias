@@ -28,18 +28,20 @@ body.escurecer::before{
 
 
 }
-.header-mobile{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    max-width: 1110px;
+    margin-inline: auto;
 }
-.header-mobile button{
+header button{
     border: none;
     background: none;
     width: fit-content;
 }
-.header-mobile nav{
+header nav.mobile {
     position: fixed;
     background-color: var(--almost-white);
     right: -16rem;
@@ -58,20 +60,25 @@ body.escurecer::before{
 
 
 }
-.header-mobile nav.abrir{
+header nav.mobile.abrir{
     right: 0;
 }
-.header-mobile nav button{
+header nav button{
 align-self: flex-end;
 margin-bottom: 4rem;
 
 }
-.header-mobile nav a {
+header .mobile a {
     text-decoration: none;
     color: var(--dark-blue);
     font-size: 1.125rem;
     line-height: 1.5rem;
 
+}
+
+main{
+    max-width: 1110px;
+    margin-inline: auto;
 }
 .primeira-secao{
     margin-bottom: 4rem;
@@ -157,4 +164,25 @@ margin-bottom: 4rem;
     font-size: 0.975rem;
     line-height: 1.625rem;
     color: var(--gunmetal);
+}
+@media(mini-width:1110px){
+    main{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+
+    }
+    header > button{
+        display: none;
+    }
+header.desktop{
+    display: flex;
+    gap: 2.5rem;
+}
+    header.desktop a {
+        font-size: 0.9375rem;
+        line-height: 1.625rem;
+        text-decoration: none;
+        color: var(--gunmetal);
+
+    }
 }

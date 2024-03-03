@@ -7,21 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
     <script src="./script.js">defer</script>
-    <title>W.noticias</title> 
+    <title>W.noticias</title>
 </head>
-<body >
-    <header class="header-mobile">
+
+<body>
+    <header>
         <img src="./assets/images/logo.svg" alt="">
         <button>
             <img src="./assets/images/icon-menu.svg" alt="icon do icon-menu">
         </button>
-        <nav > 
-<button>
-    <img src="./assets/images/icon-menu-close.svg" alt="">
-</button>
+
+
+
+        <nav class="mobile">
+            <button>
+                <img src="./assets/images/icon-menu-close.svg" alt="">
+            </button>
 
             <a href="@">Home</a>
             <a href="@">Novo</a>
@@ -29,10 +33,26 @@
             <a href="@">Treanding</a>
             <a href="@">Categoria</a>
         </nav>
+
+
+        
+        <nav class="desktop">
+            <a href="@">Home</a>
+            <a href="@">Novo</a>
+            <a href="@">Popular</a>
+            <a href="@">Treanding</a>
+            <a href="@">Categoria</a>
+
+        </nav>
     </header>
+  
     <main>
         <section class="primeira-secao">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de pxxo colorido">
+            <picture>
+                <source media="(700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de pxxo colorido">
+
+            </picture>
             <h1>
                 O Futuro brilhante da Web 3.0?
             </h1>
@@ -45,46 +65,47 @@
 
         <section class="segunda-secao">
             <h2>Novo</h2>
-        <div class="margin-border-padding ">
-            <h3>Hidrogênio VS Carros Elétricos</h3>
-            <p>Os carros movidos a hidrogênio alguma vez alcançarão os veículos elétricos?</p>
-        </div>
-        <div class="margin-border-padding">
-            <h3>A arte gerada por IA</h3>
-            <p>Quais são os possíveis efeitos adversos da geração de imagens por IA sob demanda?</p>
-        </div>
-        <div>
-            <h3>O VC Funding está esgotado?</h3>
-            <p>O financiamento privado por empresas de capital de risco caiu 50%.</p>
-        </div>
+            <div class="margin-border-padding ">
+                <h3>Hidrogênio VS Carros Elétricos</h3>
+                <p>Os carros movidos a hidrogênio alguma vez alcançarão os veículos elétricos?</p>
+            </div>
+            <div class="margin-border-padding">
+                <h3>A arte gerada por IA</h3>
+                <p>Quais são os possíveis efeitos adversos da geração de imagens por IA sob demanda?</p>
+            </div>
+            <div>
+                <h3>O VC Funding está esgotado?</h3>
+                <p>O financiamento privado por empresas de capital de risco caiu 50%.</p>
+            </div>
 
-    </section>
-    <section class="terceira-secao">
-        <div>
-            <img src="./assets/images/image-retro-pcs.jpg" alt="Computadores antigos">
+        </section>
+        <section class="terceira-secao">
             <div>
-                <strong>01</strong>
-                <h2>revivendo psc antigos</h2>
-                <p>E se PCs antigos pudessem receber peças modernas</p>
+                <img src="./assets/images/image-retro-pcs.jpg" alt="Computadores antigos">
+                <div>
+                    <strong>01</strong>
+                    <h2>revivendo psc antigos</h2>
+                    <p>E se PCs antigos pudessem receber peças modernas</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <img src="./assets/images/image-top-laptops.jpg" alt="imagen de Laptops">
             <div>
-                <strong>02</strong>
-                <h2>Top 10 Laptops de 2024</h2>
-                <p>Nossas melhores escolhas para diversas necessidades.</p>
+                <img src="./assets/images/image-top-laptops.jpg" alt="imagen de Laptops">
+                <div>
+                    <strong>02</strong>
+                    <h2>Top 10 Laptops de 2024</h2>
+                    <p>Nossas melhores escolhas para diversas necessidades.</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <img src="./assets/images/image-gaming-growth.jpg" alt="imagen de controle de video game ">
             <div>
-                <strong>03</strong>
-                <h2>O Crescimento dos Jogos</h2>
-                <p>Como a pandemia tem gerado novas oportunidades.</p>
+                <img src="./assets/images/image-gaming-growth.jpg" alt="imagen de controle de video game ">
+                <div>
+                    <strong>03</strong>
+                    <h2>O Crescimento dos Jogos</h2>
+                    <p>Como a pandemia tem gerado novas oportunidades.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 </body>
+
 </html>
